@@ -10,19 +10,19 @@ function get_card_html(name, item, moveset){
         query = 'ursaluna';
     }
     let card = `<div class="col">
-                <section class="card" style="width: 15rem;">
-                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/${query}.png" alt="${name}" width="120" align="center">
+                <section class="card" style="width: 10rem;">
+                <img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/${query}.png" alt="${name}" width="100" align="center">
                 <div class="card-body">
                 <h5 class="card-title">${name}</h5>
                 <p class="card-text">${item}</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item">${moveset[0]}</li>
-                <li class="list-group-item">${moveset[1]}</li>
-                <li class="list-group-item">${moveset[2]}</li>
-                <li class="list-group-item">${moveset[3]}</li>
+                <li class="list-group-item"><small>${moveset[0]}</small></li>
+                <li class="list-group-item"><small>${moveset[1]}</small></li>
+                <li class="list-group-item"><small>${moveset[2]}</small></li>
+                <li class="list-group-item"><small>${moveset[3]}</small></li>
                 </ul>
-            </section></div>`
+            </section></div><br />`
     return card
 
 }
