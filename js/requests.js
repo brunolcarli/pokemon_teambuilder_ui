@@ -27,7 +27,7 @@ function get_request_options(payload) {
 
 
 function generate_vgc_team_mutation(seed) {
-    let payload = `{"query": "mutation{ generateVgcTeam(input: {seed: [\\\"${seed}\\\"] dateReference: \\\"2023-11-01\\\"}){ team{members{name holdItem moveset}} } }"}`;
+    let payload = `{"query": "mutation{ generateVgcTeam(input: {seed: [\\\"${seed}\\\"] }){ team{members{name holdItem moveset}} } }"}`;
     let options = get_request_options(payload);
     return fetch(url, options)
         .then(json)
