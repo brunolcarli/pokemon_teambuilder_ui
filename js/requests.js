@@ -1,5 +1,5 @@
 // const url = 'https://poketeambuilder.brunolcarli.repl.co/graphql/';
-const url = 'https://c95a9f64-4584-4aa1-9335-7f460ff069d3-00-3c1knpave5haj.spock.replit.dev/';
+const url = 'https://c95a9f64-4584-4aa1-9335-7f460ff069d3-00-3c1knpave5haj.spock.replit.dev/graphql/';
 
 
 function status(response) {
